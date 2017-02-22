@@ -93,9 +93,9 @@ namespace Text_Based_Inset_Name
                 //Help
                 if (Input == "HELP")
                 {
-                    Console.WriteLine("Look around the area for more objects? (LOOK)");
-                    Console.WriteLine("Look in the Bucket, see what it contains? (BUCKET)");
-                    Console.WriteLine("Go up to the door? (DOOR)");
+                    Console.WriteLine("Look around the area? (LOOK)");
+                    Console.WriteLine("Look in the Bucket, to see what it contains? (BUCKET)");
+                    Console.WriteLine("Go up to the Cell door? (DOOR)");
                     Console.WriteLine("Look at the walls around you? (WALLS)");
                 }
 
