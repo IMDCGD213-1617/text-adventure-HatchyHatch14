@@ -121,7 +121,7 @@ namespace Text_Based_Inset_Name
                     {
                         Console.WriteLine("Inside the bucket a large rock sits at the bottom, you pick it up and add it to your inventory");
                         Inventory[0] = "Rock";
-                        Console.WriteLine("< Go back? Y/N");
+                        Console.WriteLine("Go back? Y/N");
                         Input = Console.ReadLine().ToUpper();
                         if (Input == "Y") { leave = 1; }
                         if (Input == "N") { leave = 0; }
@@ -135,7 +135,7 @@ namespace Text_Based_Inset_Name
                     do
                     {
                         Console.WriteLine("The door is heavy but the padlock is weak, maybe you could smash it with something?");
-                        Console.Write("Do you want to try? Y/N");
+                        Console.Write("Use an Item? Y/N");
                         Input = Console.ReadLine().ToUpper();
                         if (Input == "Y") { leave = 1; }
                         if (Input == "N") { leave = 0; }
@@ -146,7 +146,7 @@ namespace Text_Based_Inset_Name
                         int smash = 0;
                         do
                         {
-                            Console.WriteLine("The Rock looks heavy enough to smash the padlock off");
+                            Console.WriteLine("The Rock you picked up looks heavy enough to smash the padlock off");
                             Console.WriteLine("Give it a Go? Y/N");
                             Input = Console.ReadLine().ToUpper();
                             if (Input == "N") { smash = 0; }
@@ -158,7 +158,7 @@ namespace Text_Based_Inset_Name
                                 do
                                 {
                                     Console.WriteLine("It worked! With one swing of the rock in hand the old padlock shatters and the door is now open");
-                                    Console.WriteLine("< Carry Onwards? Y/N");
+                                    Console.WriteLine("Carry Onwards? Y/N");
                                     Input = Console.ReadLine().ToUpper();
                                     if (Input == "Y") { carryOnwards = 1; firstSectionComplete = 1; }
                                     if (Input == "N") { carryOnwards = 0; }
@@ -176,7 +176,7 @@ namespace Text_Based_Inset_Name
                     do
                     {
                         Console.WriteLine("The walls are cold to the touch, and also still very dirty");
-                        Console.WriteLine("< Go Back? Y/N");
+                        Console.WriteLine("Go Back? Y/N");
                         Input = Console.ReadLine().ToUpper();
                         if (Input == "Y") { leave = 1; }
                         if (Input == "N") { leave = 0; }
@@ -223,7 +223,7 @@ namespace Text_Based_Inset_Name
             } while (firstSectionComplete == 0);
 
             Console.Clear();
-            Console.Write("Well done! You have completed the first section.");
+            Console.Write("Well done! You have completed the first section of the Game!.");
 
             //------------------------
             // SECTION 2
